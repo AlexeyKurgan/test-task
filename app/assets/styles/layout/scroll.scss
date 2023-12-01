@@ -1,0 +1,26 @@
+@import "../base/variables";
+
+.main-scroll {
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    opacity: 0.48;
+    background: $scroll-color2;
+  }
+}
+
+.card-scroll {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 88px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    opacity: 0.48;
+    background: $scroll-color1;
+  }
+}

@@ -1,0 +1,20 @@
+.dashboard__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  padding: 0 64px 23px 64px;
+}
+@media (max-width: 991.98px) {
+  .dashboard__inner {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 25px 30px 25px;
+  }
+}
+@media (max-width: 390px) {
+  .dashboard__inner {
+    gap: 1em;
+    padding: 25px 15px 30px 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

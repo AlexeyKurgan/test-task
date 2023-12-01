@@ -1,0 +1,123 @@
+@import "../base/variables";
+
+.header {
+  // header inner container
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 64px 32px 64px;
+
+    @media (max-width: $media-md) {
+      flex-direction: column;
+      padding: 35px 25px 15px 25px;
+    }
+
+    @media (max-width: 390px) {
+      padding: 25px 15px 30px 15px;
+    }
+  }
+}
+
+.intro-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  @media (max-width: $media-md) {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    line-height: 2rem;
+    font-size: 2em;
+  }
+
+  p {
+    color: $secondary-text-color;
+    line-height: 1.5em;
+    font-size: 1em;
+    margin: 0;
+
+    @media (max-width: $media-extra-sm) {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.navigation {
+  width: 100%;
+  max-width: 418px;
+  border-radius: 72px;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  max-height: 56px;
+
+  @media (max-width: $media-extra-sm) {
+    max-width: 322px;
+  }
+
+  @media (max-width: 336px) {
+    padding: 8px 0;
+  }
+
+  ul {
+    display: inline-flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border-radius: 72px;
+
+    @media (max-width: 336px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  a {
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    border-radius: 40px;
+    padding: 12px 24px;
+    gap: 5px;
+    box-sizing: border-box;
+    color: $main-text-color;
+    font-family: $inter-font-500;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+
+    @media (max-width: $media-extra-sm) {
+      padding: 5px 7px;
+    }
+
+    @media (max-width: 336px) {
+      font-size: 11px;
+      padding: 5px 4px;
+    }
+
+    &:hover {
+      background-color: $light-blue;
+      color: $white;
+      transition: all 0.5s ease-out;
+
+      i {
+        color: $white;
+      }
+    }
+  }
+
+  i {
+    font-size: 16px;
+    color: $light-blue;
+    transition: all 0.5s ease-out;
+  }
+}

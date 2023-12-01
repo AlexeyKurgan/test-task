@@ -1,0 +1,67 @@
+/* HEIGHT */
+@for $i from 1 through 600 {
+  .h-#{$i}px {
+    height: $i + 0px;
+  }
+}
+
+@for $i from 1 through 100 {
+  .h-#{$i} {
+    height: $i + 0%;
+  }
+}
+
+/* MAX HEIGHT */
+@for $i from 1 through 600 {
+  .m-h-#{$i}px {
+    max-height: $i + 0px;
+  }
+}
+
+/* POSITIONS */
+.pos-r {
+  position: relative;
+}
+
+/* Margins && Paddings */
+@for $i from 0 through 110 {
+  .m-#{$i} {
+    margin: $i + 0px;
+  }
+
+  .m-b-#{$i} {
+    margin-bottom: $i + 0px;
+  }
+
+  .m-t-#{$i} {
+    margin-top: $i + 0px;
+  }
+
+  .m-l-#{$i} {
+    margin-left: $i + 0px;
+  }
+
+  .m-r-#{$i} {
+    margin-right: $i + 0px;
+  }
+
+  .p-#{$i} {
+    padding: $i + 0px;
+  }
+
+  .p-b-#{$i} {
+    padding-bottom: $i + 0px;
+  }
+
+  .p-t-#{$i} {
+    padding-top: $i + 0px;
+  }
+
+  .p-l-#{$i} {
+    padding-left: $i + 0px;
+  }
+
+  .p-r-#{$i} {
+    padding-right: $i + 0px;
+  }
+}

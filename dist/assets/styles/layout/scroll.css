@@ -1,0 +1,19 @@
+.main-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+.main-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  opacity: 0.48;
+  background: #cbccdc;
+}
+
+.card-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 88px;
+}
+.card-scroll::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  opacity: 0.48;
+  background: #d0d6e4;
+}
+/*# sourceMappingURL=scroll.css.map */

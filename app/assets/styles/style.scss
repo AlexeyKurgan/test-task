@@ -1,0 +1,25 @@
+// Utils
+@import "../styles/utils/bootstrap-reboot";
+
+// Layout
+@import "../styles/layout/layout.scss";
+@import "../styles/layout/scroll";
+
+// Typography
+@import "../styles/base/icomoon-typography";
+@import "../styles/base/typography";
+@import "../styles/base/variables";
+
+// Global styles
+@import "../styles/base/global";
+
+// Components
+// --> Checkbox
+// --> Header
+// --> Dashboard
+// --> Card
+
+@import "../styles/components/checkbox";
+@import "../styles/components/header";
+@import "../styles/components/dashboard";
+@import "../styles/components/card";

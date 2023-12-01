@@ -1,0 +1,73 @@
+// @import "../base/variables";
+@import "../base/variables";
+
+.checkbox-wrapper {
+  margin: 0 16px;
+
+  @media (max-width: $media-xl) {
+    margin: 0 10px;
+  }
+
+  @media (max-width: $media-extra-sm) {
+    margin: 0 5px;
+  }
+}
+
+.checkbox-wrapper input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  font-size: 12px;
+
+  @media (max-width: $media-md) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $media-extra-sm) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 390px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.checkbox-wrapper label:before {
+  content: "";
+  background-color: transparent;
+  border: 2px solid;
+  border-color: $decor-line;
+  padding: 7px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+
+  @media (max-width: $media-lg) {
+    padding: 5px;
+  }
+
+  @media (max-width: $media-md) {
+    padding: 7px;
+  }
+
+  @media (max-width: $media-extra-sm) {
+    padding: 5px;
+  }
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-color: $decor-line;
+}
